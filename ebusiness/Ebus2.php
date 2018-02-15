@@ -1,3 +1,7 @@
+<?php
+// start the session
+session_start();
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -35,7 +39,10 @@
         
         <script type="text/javascript" src="Ebus2_validator.js"></script>
         
-        
+        <?php
+        // Set session variables
+        $_SESSION["total"]=$_POST["total"];
+        ?>
     </body>
     
     
