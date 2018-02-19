@@ -11,7 +11,10 @@ session_start();
         
         <?php
         // Echo session variables that were on previous page
-        echo "Total is: " . $_SESSION["total"] . ".";
+        echo "Total is: $" . $_SESSION["total"] . ".";
         ?>
+        
+        <button>Print Receipt</button>
+        <a href="../homepage.html"><button>Return Home</button></a>
     </body>
 </html>
