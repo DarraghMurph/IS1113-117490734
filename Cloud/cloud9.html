@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cloud9</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+        <style>
+    div.header {
+      background: #004d99;
+      opacity: 0.9;
+      margin: 0;
+      color: #fff;
+    }
+    
+    div.w3-sidebar {
+      background: #004d99;
+      opacity: 0.6;
+      margin: 0;
+      color: #fff;
+    }
+
+        </style>
+    </head>
+    <body>
+
+
+<div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
+  <button class="w3-bar-item w3-button w3-large"
+  onclick="w3_close()">Close &times;</button>
+  <a href="salesforce.html" class="w3-bar-item w3-button">Salesforce</a>
+  <a href="cloud9.html" class="w3-bar-item w3-button">Cloud 9</a>
+  <a href="amazon.html" class="w3-bar-item w3-button">Amazon</a>
+  <a href="gmail.html" class="w3-bar-item w3-button">Gmail</a>
+  <a href="../homepage.html" class="w3-bar-item w3-button">Return Home</a>
+
+
+</div>
+
+<div id="main">
+
+<div class="header">
+  <button id="openNav" class="w3-button w3-xlarge" onclick="w3_open()">&#9776;</button>
+  <div class="w3-container">
+    <h1>Platform as a Service (PaaS) - Cloud9</h1>
+  </div>
+</div>
+
+
+<div class="w3-container">
+
+</div>
+
+</div>
+
+
+
+
+<script>
+function w3_open() {
+  document.getElementById("main").style.marginLeft = "25%";
+  document.getElementById("mySidebar").style.width = "25%";
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("openNav").style.display = 'none';
+}
+function w3_close() {
+  document.getElementById("main").style.marginLeft = "0%";
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("openNav").style.display = "inline-block";
+}
+</script>
+
+    </body>
+</html>
