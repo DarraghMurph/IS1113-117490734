@@ -5,13 +5,19 @@ function validateDetails(){
     var pin;
     var customername;
     var email;
-    var address;
-    var cardtype;
-    var exp;
+    var cardname;
+    var cardnumber;
+    var expiry;
+    var cvv;
     
-    
+
     pin = document.getElementById("user_pin").value;
     customername = document.getElementById("customername").value;
+    email = document.getElementById("email").value;
+    cardname = document.getElementById("cardname").value;
+    cardnumber = document.getElementById("cardnumber").value;
+    expiry = document.getElementById("expiry").value;
+    cvv = document.getElementById("cvv").value;
     
     if (pin==""){
         alert("Please enter your PIN");
