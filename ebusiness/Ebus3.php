@@ -10,6 +10,10 @@ session_start();
         <h4>Receipt</h4>
         
         <?php
+        echo "Customer Name: " . $_POST["customername"] . ".";
+        ?>
+        </br>
+        <?php
         // Echo session variables that were on previous page
             echo "Total is: $" . $_SESSION["totalPrice"] . ".";
         ?>

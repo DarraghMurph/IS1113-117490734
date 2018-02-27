@@ -3,8 +3,15 @@
 function validateDetails(){
     
     var pin;
+    var customername;
+    var email;
+    var address;
+    var cardtype;
+    var exp;
+    
     
     pin = document.getElementById("user_pin").value;
+    customername = document.getElementById("customername").value;
     
     if (pin==""){
         alert("Please enter your PIN");

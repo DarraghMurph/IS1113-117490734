@@ -21,6 +21,12 @@ session_start();
             
             <form method = "POST" action = "Ebus3.php">
                 
+                <label for="customername">
+                    Full Name:
+                </label>
+                
+                <input type="text" id="customername">
+                
                 <label for="user_pin">
                      PIN 
                 </label>
@@ -41,7 +47,8 @@ session_start();
         
         <?php
         // Set session variables
-        $_SESSION["total"]=$_POST["total"];
+        $_SESSION["totalPrice"]=$_POST["totalPrice"];
+        $_SESSION["customername"]=$_POST["customername"];
         ?>
     </body>
     
