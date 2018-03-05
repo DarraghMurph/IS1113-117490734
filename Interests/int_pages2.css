@@ -1,0 +1,26 @@
+#section1{
+    background: url(https://ugrad.eller.arizona.edu/sites/ugrad/files/images/photos/barcelona.jpg) no-repeat center fixed;
+    background-size: cover;
+}
+
+#section2{
+    background: url(http://trulyhandpicked.com/wp-content/uploads/2016/02/cffdb-b-switzerland-landscape-1455383451g4nk8.jpg) no-repeat center fixed;
+    background-size: cover;
+
+}
+
+#section3{
+    background: url(http://paradiseintheworld.com/wp-content/uploads/2012/04/Gold_Coast.jpg) no-repeat center fixed;
+    background-size: cover
+}
+
+.section{
+    text-align: center;
+    color: yellow;
+    font-family: impact;
+    font-size: 50px;
+    text-decoration: underline;
+    
+    
+   
+}
