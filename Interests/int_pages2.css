@@ -1,23 +1,22 @@
 #section1{
-    background: url(https://ugrad.eller.arizona.edu/sites/ugrad/files/images/photos/barcelona.jpg) no-repeat center fixed;
-    background-size: cover;
+    background: url(http://www.midvalleyit.com/_v3/wp-content/uploads/2017/06/Cloud-Services.png) no-repeat center fixed;
+
 }
 
 #section2{
-    background: url(http://trulyhandpicked.com/wp-content/uploads/2016/02/cffdb-b-switzerland-landscape-1455383451g4nk8.jpg) no-repeat center fixed;
-    background-size: cover;
+    background: url(https://home-assistant.io/images/supported_brands/icloud.png) no-repeat center fixed;
+
 
 }
 
 #section3{
-    background: url(http://paradiseintheworld.com/wp-content/uploads/2012/04/Gold_Coast.jpg) no-repeat center fixed;
-    background-size: cover
+    background: url(http://freevectorlogo.net/wp-content/uploads/2011/05/dropbox-vector-logo-400x400.png) no-repeat center fixed;
+
 }
 
 .section{
-    text-align: center;
-    color: yellow;
-    font-family: impact;
+    color: black;
+    font-family: sans-serif;
     font-size: 50px;
     text-decoration: underline;
     
