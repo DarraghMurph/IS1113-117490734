@@ -1,25 +1,22 @@
 #section1{
-    background: url(http://www.midvalleyit.com/_v3/wp-content/uploads/2017/06/Cloud-Services.png) no-repeat center fixed;
-
+    background: url(http://natbg.com/wp-content/uploads/2016/09/sky-moon-night-clouds-sky-earth-nature-desktop-images-1920x1080.jpg) no-repeat center fixed;
+    background-size: cover;
 }
 
 #section2{
-    background: url(https://home-assistant.io/images/supported_brands/icloud.png) no-repeat center fixed;
-
+    background: url(http://images4.fanpop.com/image/photos/19000000/blue-cloud-background-blue2-19029417-1920-986.jpg) no-repeat center fixed;
+    background-size: cover;
 
 }
 
 #section3{
-    background: url(http://freevectorlogo.net/wp-content/uploads/2011/05/dropbox-vector-logo-400x400.png) no-repeat center fixed;
-
+    background: url(http://images4.fanpop.com/image/photos/19000000/blue-cloud-background-blue2-19029417-1920-986.jpg) no-repeat center fixed;
+    background-size: cover
 }
 
 .section{
-    color: black;
+    text-align: center;
     font-family: sans-serif;
     font-size: 50px;
-    text-decoration: underline;
-    
-    
-   
+
 }
