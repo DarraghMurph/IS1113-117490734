@@ -7,6 +7,7 @@ session_start();
     <head>
         
         <title> Enter Details</title>
+        <!--Linking stylesheet-->
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         
         
@@ -37,22 +38,24 @@ session_start();
                 }
          </script>
          
-        
+        <!--Styling the page-->
         <style>
-            img.cloud {
+            .cloud {
                 float: right;
                 height: 120px;
             }
             h2 {
                 text-decoration: underline;
             }
-            img.cards {
+            .cards {
                 width: 350px;
                 height:75px;
             }
+            /* background image */
             body {
                 background: url(http://www.ideasphere.com/wp-content/uploads/2016/08/Savin-NY-Website-Background-Web-1.jpg) no-repeat center fixed;
             }
+            /* custom buttons */
             .submit {
              background-color: #e7e7e7; color: black;;
              display: inline-block;
@@ -92,8 +95,9 @@ session_start();
 
         
             <br />
-            
+            <!--Creating form-->
             <form method = "POST" action = "Ebus3.php">
+                
                 
                 <h2>Personal Details:</h2>
                 
@@ -172,9 +176,9 @@ session_start();
             </form>
             
             <br />
-            
+            <!--Calling function-->
             <button onClick="validateDetails()" class="validate"> Validate </button>
-        
+        <!--Validator-->
         <script src="Ebus2_validator.js"></script>
         
         <?php

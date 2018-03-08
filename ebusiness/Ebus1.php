@@ -8,17 +8,20 @@
         <script src="cost_calc.js"></script>
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         
+        <!--Styling the page-->
         <style>
-            h2.mainheading {
+            .mainheading {
                 text-decoration: underline;
             }
-            img.cloud {
+            .cloud {
                 float: right;
                 height: 120px;
             }
+            /* background image */
             body {
                 background: url(http://www.ideasphere.com/wp-content/uploads/2016/08/Savin-NY-Website-Background-Web-1.jpg) no-repeat center fixed;
             }
+            /* custom buttons */
             .cost {
              background-color: #e7e7e7; color: black;;
              display: inline-block;

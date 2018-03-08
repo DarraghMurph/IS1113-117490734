@@ -4,21 +4,25 @@
         <title>Murphy Cloud Services</title>
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--Linking stylesheet-->
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <!--Styling the page-->
         <style>
-            img.cloud {
+            .cloud {
                 float: right;
                 height: 120px;
             }
-            h3.about {
+            .about {
                 text-decoration: underline;
             }
-            h3.contact {
+            .contact {
                 text-decoration: underline;
             }
+            /* background image */
             body {
                 background: url(http://www.ideasphere.com/wp-content/uploads/2016/08/Savin-NY-Website-Background-Web-1.jpg) center fixed;
             }
+            /* custom buttons */
             .shop {
                 background-color: #e7e7e7; color: black;;
                 display: inline-block;
@@ -45,10 +49,12 @@
         </style>
     </head>
     <body>
-        
+        <!--Top container-->
         <div class="w3-container w3-blue">
+            <!--Cloud image-->
             <img class="cloud" alt="cloud" src="https://clipartion.com/wp-content/uploads/2016/04/cloud-images-illustrations-photos.png">
           <h1>Murphy Cloud Services</h1>
+          <!--Slogan-->
           <p>The "number wan" cloud service there is.</p>
         </div>
         
@@ -63,8 +69,16 @@
         <p class="one"><strong>Customer Support:</strong> 1800-121-440</p>
         <p class="one"><strong>Company Address:</strong> Main Street, Co. Dublin, Ireland</p>
         
-        <a href="../Cloud/cloud.html"><button class="btncloud">View Cloud Services</button></a>
-        <a href="../ebusiness/Ebus1.php"><button class="shop">Shop</button></a>
+        <!--Button link-->
+        <form style="display: inline" action="../Cloud/cloud.html" method="get">
+          <button class="btncloud">View Cloud Services</button>
+        </form>
+        
+        <!--Button link-->
+        <form style="display: inline" action="../ebusiness/Ebus1.php" method="get">
+          <button class="shop">Shop Cloud Services</button>
+        </form>        
+        
 
     </body>
 </html>

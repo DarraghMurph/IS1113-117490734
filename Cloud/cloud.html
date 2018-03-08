@@ -4,28 +4,29 @@
 <title>Cloud Services</title>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--Linking stylesheets-->
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-
+  <!--Styling the page-->
   <style>
     body {
       background: url(http://www.ideasphere.com/wp-content/uploads/2016/08/Savin-NY-Website-Background-Web-1.jpg) no-repeat center fixed;
     }
-    
-    div.header {
+    /* header and sidebar customisation */
+    .header {
       background: #004d99;
       opacity: 0.9;
       margin: 0;
  
     }
     
-    div.w3-sidebar {
+    .w3-sidebar {
       background: #004d99;
       opacity: 0.6;
       margin: 0;
 
     }
     
-            img.cloud {
+            .cloud {
                 float: right;
                 height: 120px;
             }
@@ -34,7 +35,7 @@
   
 </head>
 <body>
-
+<!--Sidebar obtained from w3schools-->
 <div class="w3-sidebar w3-blue w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
   <button class="w3-bar-item w3-button w3-large"
   onclick="w3_close()">Close &times;</button>
@@ -65,7 +66,7 @@
 
 
 </div>
-
+<!--Sidebar-->
 <script>
 function w3_open() {
   document.getElementById("main").style.marginLeft = "25%";

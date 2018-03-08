@@ -1,6 +1,6 @@
 /* global $ */
 
-
+/*calculations as seen on ebus1 */
 function calcSub(){
     
     var argSubTotal; 
@@ -22,7 +22,7 @@ function calcSub(){
     display(argSubTotal);
     calcDisVatTotal(argSubTotal);
 }
-
+/* vat and discount calculations */
 function calcDisVatTotal(parmsubtotal){
     
     var vatAmt=0.1;
@@ -53,7 +53,7 @@ function display(parm1, parm2, parm3, parm4) {
     
     
 }  
-
+/* enabling/disabling buttons */
 function enablebtnProceed() {
     $('#btnProceed').prop('disabled', false);
     

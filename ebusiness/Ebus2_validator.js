@@ -12,6 +12,7 @@ function validateDetails(){
     expiry = document.getElementById("expiry").value;
     cvv = document.getElementById("cvv").value;
     
+    /* declaring variables followd by if statement for validation */
     var pin;
     if (pin==""){
         alert("Please enter your PIN.");
@@ -87,7 +88,7 @@ function validateDetails(){
         }        
 }
 
-
+/* enabling/disabling buttons */
 function enablebtnPurchase(){
      $('#btnPurchase').prop('disabled',false);
 }

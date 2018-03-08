@@ -5,10 +5,12 @@ session_start();
 <html>
     <head>
         <title>Receipt</title>
+        <!--Styling the page-->
         <style>
             body {
                 text-align: center;
             }
+            /* receipt container */
             .container {
                 background-color: #f2f2f2;
                 padding: 5px 20px 15px 20px;
@@ -33,6 +35,7 @@ session_start();
             h3 {
             border-style: groove;
             }
+            /* custom buttons */
             .print {
              background-color: #e7e7e7; color: black;;
              display: inline-block;
@@ -62,6 +65,7 @@ session_start();
         </style>
     </head>
     <body>
+        <!--Creating container for receipt-->
         <div style="margin-right:auto;margin-left:auto;width:350px;">
         <div class="row">
             <div class="container">
@@ -96,7 +100,7 @@ session_start();
         </div>
         </div>
         </div>
-        
+        <!--Printing-->
         <script>
         function myFunction(){
         window.print();

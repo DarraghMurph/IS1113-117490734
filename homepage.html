@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html>
     <head>
-        
-        <title>117490734</title>
+        <meta charset="utf-8"/>
+        <title>Homepage</title>
+        <!--Linking stylesheets used-->
         <link rel="stylesheet" href="mystylesheet.css" type="text/css" />
         <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"  />
 
+<!--Styling the page-->
 <style>
+/* background image and font*/
 body {
     margin: 0;
     font-family: sans-serif;
     background: url(http://blog.travellanda.com/wp-content/uploads/2015/08/Hong-Kong.jpg) no-repeat center fixed; 
     background-size: cover;
 }
+/* navigation bar */
 nav {
     position: fixed;
     width: 100%;
@@ -21,6 +25,7 @@ nav {
     text-align: right;
     opacity: 0.6;
 }
+/*dropdown my information */
 nav ul {
     list-style-type: none;
     margin: 0;
@@ -56,19 +61,30 @@ nav ul li:hover > ul{
     display: block;
     color: white;
 }
-h1.mainheading {
+.mainheading {
     font-family: impact;
     color: black;
     text-decoration: underline;
+}    
+    
+/* website credit */    
+.website {
+    font-family: impact;
+    opacity: 0.5;
+    font-size: 25px;
 }
+
 
 </style>
 </head>
     <body>
+        <!--Creating the navigation bar used at the top of the homepage-->
+        <div>
         <nav>
             <ul>
                 <li><a href="homepage.html"><i class="fa fa-home"></i> Home</a></li>
                 <li><a href="#">My Information <i class="fa fa-angle-double-down"></i></a>
+                <!--Creating the dropdown menu-->
                 <ul>
                     <li><a href="CV/cv_page1.html"><i class="fa fa-book"></i> Curriculum Vitae</a></li>
                     <li><a href="Interests/sports.html"><i class="fa fa-user"></i> Interests</a></li>
@@ -81,6 +97,13 @@ h1.mainheading {
                 <li><a href="https://www.heroku.com/" target="_blank"><i class="fa fa-h-square"></i> Heroku</a></li>
             </ul>
         </nav>
+        </div>
+   
+    <!--Website credit stuck to the bottom of the page-->
+    <div style="position: absolute; bottom: 5px;" class="website">
+    This website was created by Darragh Murphy, BIS 1 - UCC.
+    </div>
+
    </body>
     
 </html>    
