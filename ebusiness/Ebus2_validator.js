@@ -2,13 +2,6 @@
 
 function validateDetails(){
     
-    var pin;
-    var customername;
-    var email;
-    var cardname;
-    var cardnumber;
-    var expiry;
-    var cvv;
     
 
     pin = document.getElementById("user_pin").value;
@@ -19,16 +12,81 @@ function validateDetails(){
     expiry = document.getElementById("expiry").value;
     cvv = document.getElementById("cvv").value;
     
+    var pin;
     if (pin==""){
-        alert("Please enter your PIN");
+        alert("Please enter your PIN.");
         }
     else if (String(pin).length<4){
-        alert("Please make sure your PIN is accurate");
+        alert("Please make sure your PIN is correct.");
         }
     else{
         enablebtnPurchase();
         }
+    
+    
+    var customername;
+    if (customername==""){
+        alert("Please enter your full name.");
+        }
+    else{
+        enablebtnPurchase();
+        }    
+    
+   
+    var email;
+    if (email==""){
+        alert("Please enter your email.");
+        }
+    else{
+        enablebtnPurchase();
+        }   
+        
+   
+    var cardname;
+    if (cardname==""){
+        alert("Please enter the name as shown your card.");
+        }
+    else{
+        enablebtnPurchase();
+        }
+        
+    
+    var cardnumber;
+    if (cardnumber==""){
+        alert("Please enter your card number.");
+        }
+    else if (String(cardnumber).length<16){
+        alert("Please make sure your card number is correct.");
+        }
+    else{
+        enablebtnPurchase();
+        }    
+
+    
+    var expiry;
+    if (expiry==""){
+        alert("Please enter the card expiry date.");
+        }
+    else if (String(expiry).length<5){
+        alert("Please make sure your expiry is correct. Please note it must be written in 5-digit format e.g. May=05, 2020=20. - 05/20");
+        }
+    else{
+        enablebtnPurchase();
+        }   
+
+    
+    var cvv;
+    if (cvv==""){
+        alert("Please enter your CVV, it can be found on the back of your card.");
+        }
+    else if (String(cvv).length<3){
+        alert("Please make sure your CVV is correct, it can be found on the back of your card.");
+        }
+    else{
+        enablebtnPurchase();
+        }        
 }
+
 
 function enablebtnPurchase(){
      $('#btnPurchase').prop('disabled',false);

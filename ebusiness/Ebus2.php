@@ -7,77 +7,165 @@ session_start();
     <head>
         
         <title> Enter Details</title>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         
         
         <!--jQuery-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+         
+        <!--Function for the text box to only allow numbers only-->
+         <script language="Javascript">
+             function isNumberKey(evt)
+            {
+                var charCode = (evt.which) ? evt.which : event.keyCode
+                if (charCode > 31 && (charCode < 48 || charCode > 57))
+                return false;
+ 
+                return true;
+            }
+         </script> 
+         
+         <!--Function for the text box to only allow letters only-->
+         <script language="Javascript">
+             function alphaOnly(e) {
+                var code;
+                if (!e) var e = window.event;
+                if (e.keyCode) code = e.keyCode;
+                else if (e.which) code = e.which;
+                if ((code >= 48) && (code <= 57)) { return false; }
+                return true;
+                }
+         </script>
+         
+        
+        <style>
+            img.cloud {
+                float: right;
+                height: 120px;
+            }
+            h2 {
+                text-decoration: underline;
+            }
+            img.cards {
+                width: 350px;
+                height:75px;
+            }
+            body {
+                background: url(http://www.ideasphere.com/wp-content/uploads/2016/08/Savin-NY-Website-Background-Web-1.jpg) no-repeat center fixed;
+            }
+            .submit {
+             background-color: #e7e7e7; color: black;;
+             display: inline-block;
+             color: black;
+             border-radius: 8px;
+                
+            }
+            .submit:hover {
+             background-color: green;
+             cursor: pointer;
+                color: white;
+             
+            }
+            .validate {
+             background-color: #e7e7e7; color: black;;
+             display: inline-block;
+             color: black;
+             border-radius: 8px;
+                
+            }
+            .validate:hover {
+             background-color: black;
+             cursor: pointer;
+                color: white;
+             
+            }
+            
+        </style>
     </head>
     
     <body>
-        
-        <h4>Please enter your payment details.</h4>
+            <div class="w3-container w3-blue">
+            <img class="cloud" src="https://clipartion.com/wp-content/uploads/2016/04/cloud-images-illustrations-photos.png">
+              <h1>Murphy Cloud Services</h1>
+              <p>Please enter your specified details.</p>
+            </div>        
+
         
             <br />
             
             <form method = "POST" action = "Ebus3.php">
                 
+                <h2>Personal Details:</h2>
+                
                 <label for="customername">
                     Full Name:
                 </label>
+                <br/>
+                <input type="text" id="customername" name="customername" placeholder="Joe Soap" onkeypress="return alphaOnly(event);">
                 
-                <input type="text" id="customername" name="customername" placeholder="Joe Soap">
-                
+                <br/>
                 <br/>
                 
                  <label for="email">
                     Email:
                 </label>
-                
-                <input type="text" id="email" name="email" placeholder="joe.soap@yahoo.ie">
+                <br/>
+                <input type="text" id="email" name="email" placeholder="joe.soap@yahoo.ie" maxlength="50">
                 
                 <br/>
+                <br/>
                 
-                <label for="user_pin">
-                     PIN:
-                </label>
+                <h2>Card Details:</h2>
                 
-                <input type="password" id="user_pin" placeholder="Card Pin" maxlength="4">
+                <img class="cards" src="https://www.tufcosmetics.com/wp-content/uploads/2015/12/major-Credit-Card-Logos-1024x211.png">
                 
                 <br/>
                 
                 <label for="cardname">
                     Name on Card:
                 </label>
+                <br/>
+                <input type="text" id="cardname" name="cardname" placeholder="Mr. Joe Soap" onkeypress="return alphaOnly(event);" maxlength="50">
                 
-                <input type="text" id="cardname" name="cardname" placeholder="Mr. Joe Soap">
-                
+                <br/>
                 <br/>
                 
                 <label for="cardnumber">
                     Card Number:
                 </label>
-                
-                <input type="text" id="cardnumber" name="cardnumber" placeholder="0000-0000-0000-0000" maxlength="16">
+                <br/>
+                <input type="text" id="cardnumber" name="cardnumber" placeholder="0000-0000-0000-0000" onkeypress="return isNumberKey(event)" maxlength="16">
                 
                 <br/>
+                <br/>
                 
+                <label for="user_pin">
+                     PIN:
+                </label>
+                <br/>
+                <input type="password" id="user_pin" placeholder="Card Pin" onkeypress="return isNumberKey(event)" maxlength="4">
+                
+                <br/>
+                <br/>
+
                 <label for="expiry">
                     Expiry Date:
                 </label>
-                
+                <br/>
                 <input type="text" id="expiry" name="expiry" placeholder="'04/20' format" maxlength="5">
                 
+                <br/>
                 <br/>
                 
                 <label for="cvv">
                     CVV:
                 </label>
-                
-                <input type="text" id="cvv" name="cvv" placeholder="000" maxlength="3">
+                <br/>
+                <input type="text" id="cvv" name="cvv" placeholder="000" onkeypress="return isNumberKey(event)" maxlength="3">
                 
                 <br/>
                     
-                <button type="Submit" id="btnPurchase" disabled> 
+                <button type="Submit" class="submit" id="btnPurchase" disabled> 
                     Proceed with Purchase 
                 </button>
                 
@@ -85,7 +173,7 @@ session_start();
             
             <br />
             
-            <button onClick="validateDetails()"> Validate </button>
+            <button onClick="validateDetails()" class="validate"> Validate </button>
         
         <script type="text/javascript" src="Ebus2_validator.js"></script>
         
