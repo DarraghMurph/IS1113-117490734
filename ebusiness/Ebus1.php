@@ -5,7 +5,7 @@
         
         <!--jQuery-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script type="text/javascript" src="cost_calc.js"></script>
+        <script src="cost_calc.js"></script>
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         
         <style>
@@ -50,7 +50,7 @@
     <body>
         
             <div class="w3-container w3-blue">
-            <img class="cloud" src="https://clipartion.com/wp-content/uploads/2016/04/cloud-images-illustrations-photos.png">
+            <img class="cloud" alt="cloud" src="https://clipartion.com/wp-content/uploads/2016/04/cloud-images-illustrations-photos.png">
               <h1>Murphy Cloud Services</h1>
               <p>Select a service.</p>
             </div>        

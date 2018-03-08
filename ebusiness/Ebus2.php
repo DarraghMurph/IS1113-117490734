@@ -14,7 +14,7 @@ session_start();
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
          
         <!--Function for the text box to only allow numbers only-->
-         <script language="Javascript">
+         <script>
              function isNumberKey(evt)
             {
                 var charCode = (evt.which) ? evt.which : event.keyCode
@@ -26,7 +26,7 @@ session_start();
          </script> 
          
          <!--Function for the text box to only allow letters only-->
-         <script language="Javascript">
+         <script>
              function alphaOnly(e) {
                 var code;
                 if (!e) var e = window.event;
@@ -85,7 +85,7 @@ session_start();
     
     <body>
             <div class="w3-container w3-blue">
-            <img class="cloud" src="https://clipartion.com/wp-content/uploads/2016/04/cloud-images-illustrations-photos.png">
+            <img class="cloud" alt="cloud" src="https://clipartion.com/wp-content/uploads/2016/04/cloud-images-illustrations-photos.png">
               <h1>Murphy Cloud Services</h1>
               <p>Please enter your specified details.</p>
             </div>        
@@ -117,7 +117,7 @@ session_start();
                 
                 <h2>Card Details:</h2>
                 
-                <img class="cards" src="https://www.tufcosmetics.com/wp-content/uploads/2015/12/major-Credit-Card-Logos-1024x211.png">
+                <img class="cards" alt="cards" src="https://www.tufcosmetics.com/wp-content/uploads/2015/12/major-Credit-Card-Logos-1024x211.png">
                 
                 <br/>
                 
@@ -175,7 +175,7 @@ session_start();
             
             <button onClick="validateDetails()" class="validate"> Validate </button>
         
-        <script type="text/javascript" src="Ebus2_validator.js"></script>
+        <script src="Ebus2_validator.js"></script>
         
         <?php
         // Set session variables

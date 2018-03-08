@@ -89,7 +89,10 @@ session_start();
         <h4>Thank you for your custom.</h4>
         
         <button onclick="myFunction()" class="print">Print Receipt</button>
-        <a href="../homepage.html"><button class="home">Return Home</button></a>
+        
+        <form style="display: inline" action="../homepage.html" method="get">
+          <button class="home">Return Home</button>
+        </form>        
         </div>
         </div>
         </div>
