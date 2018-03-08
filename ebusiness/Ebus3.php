@@ -16,7 +16,7 @@ session_start();
                 padding: 5px 20px 15px 20px;
                 border: 1px solid lightgrey;
                 border-radius: 3px;
-}
+            }
 
 
             .row {
@@ -25,7 +25,7 @@ session_start();
                 -ms-flex-wrap: wrap; /* IE10 */
                 flex-wrap: wrap;
                 margin: 0 -16px;
-}
+            }
 
             h4 {
             border-bottom: 6px;

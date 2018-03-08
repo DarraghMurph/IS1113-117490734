@@ -40,7 +40,7 @@ session_start();
          
         <!--Styling the page-->
         <style>
-            .cloud {
+                .cloud {
                 float: right;
                 height: 120px;
             }
